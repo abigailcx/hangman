@@ -1,4 +1,5 @@
-from milestone_3 import Hangman
+from input_verification import Hangman
+
 
 def play_game():
     word_list = ["raspberry", "strawberry", "banana", "mango", "kiwi"]
@@ -12,5 +13,6 @@ def play_game():
         elif game.num_lives != 0 and game.num_letters == 0:
             print(f"Congratulations! The word is {game.word.upper()}. You have won the game!")
             break
+
 
 play_game()
